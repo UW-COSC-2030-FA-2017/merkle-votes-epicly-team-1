@@ -246,7 +246,7 @@ void bTREE::nodePrint(Node* root) const
                 if ((printQueue2.front())!= NULL)
                 {
                     //cout << i << ' ' << k << endl;
-                    cout << "[" << setw(2) << printQueue2.front()->time_ << "]";
+                    cout << "[" << setw(2) << printQueue2.front()->dHashed_ << "]";
                     printQueue2.pop();
                     for (int l=((pow(2,level-i)-1)*2); l>0; l--)
                     {
@@ -271,6 +271,7 @@ void bTREE::levelCount(Node* root, int& level) const
     return;
 }
 
+//test code used to test function before tree building was functional
 /*void bTREE::testTree1()
 {
     if (rootNode_==NULL)
