@@ -15,10 +15,10 @@ using namespace std;
 int main(int argc, char **argv)
 {
     pMT Merk1(1);
-    string inFileName="mv_test.txt", inTempData="";
+    string inFileName/*="mv_test.txt"*/, inTempData="";
     int inTempTime=0;
-    //cout << "Enter file name including file extension: ";
-    //cin >> inFileName;
+    cout << "Enter file name including file extension: ";
+    cin >> inFileName;
     ifstream inFile(inFileName);
     if (!inFile.is_open())
     {
@@ -39,8 +39,8 @@ int main(int argc, char **argv)
         pMT Merk2(2);
     string inFileName2="mv_test.txt", inTempData2="";
     int inTempTime2=0;
-    //cout << "Enter file name including file extension: ";
-    //cin >> inFileName;
+    cout << "Enter file name including file extension: ";
+    cin >> inFileName2;
     ifstream inFile2(inFileName2);
     if (!inFile2.is_open())
     {
